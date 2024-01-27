@@ -19,7 +19,8 @@ public interface BookRepository extends JpaRepository<Book, Long> {
 	
 	Book findById(long id);
 
-	void delete(Book book);
+	void delete(long id);
 	
-	void deleteById(long id);
+	void update(Book book);
+	
 }
