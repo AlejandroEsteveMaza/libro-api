@@ -1,4 +1,4 @@
-package com.alejandroem.exception;
+package com.alejandroem.libroapi.exception;
 
 public class BookNotFoundException extends RuntimeException {
 
