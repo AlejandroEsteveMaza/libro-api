@@ -23,6 +23,10 @@ public class BookService {
 		return this.bookRepository.save(book);
 	}
 
+	public Book findBookById(long id) {
+		return this.bookRepository.findById(id).orElseThrow(()-> new BookNotFoundException("Libro no encontrado: " + id));
+	}
+
 	
 
 	/* 
